@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marsel Davletov</title>
+
+    <style>
+        body{
+            background-color: grey;
+        }
+        #main_box{
+            width: 30%;
+            background-color: white;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            margin: auto;
+            margin-top: 10%;
+        }
+
+        #red, #yellow, #green {
+            width: 90%;
+            height: 200px;
+            border: solid;
+            margin: auto;
+            border: 8px solid;
+        } 
+        
+        #red{
+            background-color: red;
+            border-color: rgb(99, 38, 38);
+        }
+
+        #yellow{
+            background-color: yellow;
+            border-color: rgb(145, 145, 34);
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        #green{
+            background-color: green;
+            border-color: rgb(44, 82, 44);
+        }
+       
+        .hidden_box, #inside_red, #inside_yellow{
+            width: 100%;
+            height: 50%;
+        }
+
+
+        .hidden_box{
+            background-color: black;
+            opacity: 0;
+        }
+
+        #inside_red{
+            background-color: rgb(94, 58, 58);
+        }
+
+        #inside_yellow{
+            background-color: yellowgreen;
+            width: 50%;
+            margin-left: 50%;
+        }
+
+        #inside_green{
+            background-color: rgb(73, 88, 58);
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id = "main_box">
+        <div id = "red">
+            <div class = "hidden_box"></div>
+            <div id = "inside_red"></div>
+        </div>
+        <div id = "yellow">
+            <div class = "hidden_box"></div>
+            <div id = "inside_yellow"></div>
+            
+        </div>
+        <div id = "green">
+            <div class = "hidden_box"></div>
+            <div id = "inside_green"></div>
+        </div>
+    </div>
+</body>
+</html>
